@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Seychelles Island Car Hire — Full Combined Code</title>
+  <style>
+    :root{
+      --accent:#0aa3a3;
+      --sand:#f4e9d8;
+      --dark:#073b3b;
+      --card-bg: rgba(255,255,255,0.9);
+      font-family: Inter, system-ui;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(#bfe9e0,#f7f1e6);color:var(--dark)}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;background:rgba(255,255,255,0.6);backdrop-filter:blur(6px);position:sticky;top:0;z-index:10}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:16px;color:var(--dark);text-decoration:none;font-weight:600}
+
+    .hero{padding:48px 18px 24px}
+    .hero-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:20px}
+    h1{font-size:clamp(24px,4vw,40px);margin:0}
+
+    .search-card{background:var(--card-bg);padding:16px;border-radius:12px;display:flex;gap:12px;flex-wrap:wrap;box-shadow:0 6px 18px rgba(20,30,30,0.06)}
+    .field{flex:1;min-width:160px}
+    label{display:block;font-size:12px;margin-bottom:6px;color:#385}
+    input,select{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd}
+    button.primary{background:var(--accent);color:white;padding:12px 18px;border-radius:10px;border:0;font-weight:700}
+
+    main{max-width:1100px;margin:24px auto;padding:0 18px}
+    .fleet{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+
+    .car{background:var(--card-bg);padding:14px;border-radius:12px;display:flex;flex-direction:column;gap:10px}
+    .media{height:140px;border-radius:8px;background:#e6f7f6;display:flex;align-items:center;justify-content:center;font-weight:700;color:#076}
+    .price{font-weight:800}
+    .footer{text-align:center;padding:30px;color:#083;margin-top:40px}
+
+    .modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.45);display:none;align-items:center;justify-content:center;padding:20px}
+    .modal{background:white;border-radius:12px;max-width:720px;width:100%;padding:18px}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .small{flex:1;min-width:140px}
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">SS</div>
+    <div>
+      <div style="font-weight:800">Seychelles Car Hire</div>
+      <div style="font-size:12px;color:#045">Island-style rentals — Mahe</div>
+    </div>
+  </div>
+  <nav>
+    <a href="#fleet">Fleet</a>
+    <a href="#how">How it works</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Book your island ride — fast & simple</h1>
